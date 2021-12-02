@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Armaan's DevCard</title>
+    <title><%= user.fullName %>'s DevCard</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.1/dist/expanded/luxa.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="has-dflex-center">
@@ -28,8 +28,7 @@
                     </div>
                     <div class="infos">
                       <span
-                        ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;Armaan
-                        Dhanji</span
+                        ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;<%= user.fullName %></span
                       ><span
                         ><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Full Stack
                         Developer</span
@@ -43,22 +42,22 @@
                 <div class="lx-card">
                   <h1 class="title">My Picture Gallery URL:</h1>
                   <div class="text">
-                    <span>http://localhost:8007/54az3/photos</span>
+                    <span>I'm not doing milestone 3 sorry Armaan</span>
                   </div>
                 </div>
                 <div class="lx-card">
                   <div class="lx-row">
-                    <h1 class="title">Connect with Armaan</h1>
+                    <h1 class="title">Connect with <%= user.fullName %></h1>
                     <div class="mini-cards">
                       <a
                         class="has-dflex-center bs-md"
-                        href="https://github.com/adhanji8"
+                        href= <%= user.githubUrl %>
                         target="_blank"
                         rel="noopener noreferrer"
                         ><i class="fab fa-github-alt"></i></a
                       ><a
                         class="has-dflex-center bs-md"
-                        href="https://www.twitter.com/bcit"
+                        href= <%= user.twitterUrl %>
                         target="_blank"
                         rel="noopener noreferrer"
                         ><i class="fab fa-twitter"></i
@@ -72,7 +71,7 @@
               <div class="lx-row">
                 <div class="lx-row lx-card">
                   <h1 class="title">
-                    <i class="fas fa-info-circle"></i>&nbsp;Welcome to Armaan's
+                    <i class="fas fa-info-circle"></i>&nbsp;Welcome to <%= user.fullName%>'s
                     corner of the Internet
                   </h1>
                 </div>
@@ -82,14 +81,7 @@
                   </h1>
                   <div class="text">
                     <p>
-                      Hi, my name is&nbsp;<b>Armaan Dhanji</b>, but I'm better
-                      known by my nickname&nbsp;<i>@armaand</i>, and I'm a
-                      teacher in the School of Computing at BCIT.
-                    </p>
-                    <p>
-                      I&nbsp;&nbsp;<i class="fas fa-heart"></i>&nbsp; to code
-                      full-stack projects, always looking for innovative ways to
-                      write code that follows practices!
+                      <%= user.aboutMe %>
                     </p>
                   </div>
                 </div>

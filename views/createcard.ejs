@@ -4,7 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>devcard sign-up</title>
+    <link rel="stylesheet" href="cardstyles.css">
   </head>
-  <body></body>
+  <body>
+
+    <div class="page">
+
+  <!--Left box-->
+  <div class="sideboxes">
+    <div id="leftbox"></div>
+    
+  <!--Right box-->
+    <div id="rightbox"></div>    
+  </div>
+
+
+  <!--Heading-->    
+  <h1>
+    Create your own devcard
+  </h1>
+
+  <hr>
+
+  <!--Form-->
+  <form action="/create" method="POST">
+
+  <div class="form">
+
+    <!--Enter name-->
+    <div class="input">
+      <label for="fullName">Enter name</label>
+      <input id="fullName" name="fullName" type="">
+    </div>
+
+    <!--About Me-->
+    <div class="input">
+      <label for="aboutMe">About me</label>
+      <textarea name="aboutMe" maxlenght= "250" id="aboutMe" required></textarea>
+    </div>
+
+    <!--GitHub URL-->
+    <div class="input">
+      <label for="githubUrl">GitHub URL</label>
+      <input id="githubUrl" name="githubUrl" type="">
+    </div>
+
+    <!--Twitter-->
+    <div class="input">
+      <label for="twitterUrl">Twitter Handle</label>
+      <input id="twitterUrl" name="twitterUrl" type="">
+    </div>
+
+    <!--Checklist-->
+    <p class="input" id="checklistname">Select your technologies</p>
+    <div class="input">
+        <label for="knownTechnologies">JS</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="JS">
+        <label for="knownTechnologies">CSS</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="CSS">
+        <label for="knownTechnologies">Node.js</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="Node.js">
+        <label for="knownTechnologies">Git</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="Git">
+        <label for="knownTechnologies">React</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="React">
+        <label for="knownTechnologies">HTML</label>
+        <input id="knownTechnologies" name="knownTechnologies" type="checkbox" value="HTML">
+      </div>
+
+    <!--Button-->
+    <div>
+      <button type="submit">Create my devcard!</button>
+    </div>
+
+</div>
+
+</form>
+  </body>
 </html>
